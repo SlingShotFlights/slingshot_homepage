@@ -22,6 +22,7 @@ h1 {
 }
 a {
 	text-decoration: none;
+	color: #41998a;
 }
 
 .green {
@@ -93,7 +94,7 @@ select {
 	align-items: center;
 	justify-content: center;
 	padding: 3em 0;
-	background: url("../img/airport.jpeg") bottom center no-repeat blue;
+	background: url("../img/airport.jpeg") bottom center no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -218,7 +219,12 @@ h3 {
 /* ---- Page Elements ---- */
 
 .headline {
-	margin-bottom: 0;
+	font-size: 2em;
+	max-width: 70%;
+	margin-bottom: 10px;
+}
+.tagline {
+	max-width: 80%;
 }
 .img-success {
 	max-width: 100%;
@@ -260,6 +266,7 @@ h3 {
 	}
 	.headline {
 		font-size: 3em;
+		max-width: 100%;
 	}
 	.tagline {
 		font-size: 1.4em;
