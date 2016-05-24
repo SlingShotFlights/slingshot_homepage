@@ -69,7 +69,7 @@ select {
 .name a,
 .main-nav a {
 	text-align: center;
-	padding: 10px 10px;
+	padding: 10px 12px;
 	display: none;
 }
 
@@ -294,7 +294,7 @@ h3 {
 		padding: 0 1em;
 	}
 	.cta-box {
-		width: 50%;
+		width: 65%;
 	}
 	.security {
 		flex-wrap: wrap;
