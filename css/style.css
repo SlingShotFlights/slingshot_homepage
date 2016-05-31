@@ -245,6 +245,7 @@ h3 {
 	border-radius: .35em;
 	margin-top: 20px;
 	cursor: pointer;
+	border: none;
 }
 .icons {
 	height: 56px;
