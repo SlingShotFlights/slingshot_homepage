@@ -53,9 +53,9 @@ function getQueryVariable(variable)
        return(false);
 }
 
-            var typeform = "https://slingshotflights.typeform.com/to/VAOUJn?"
-            var fname = "fname=" + getQueryVariable("fname");
-            var lname = "&fname=" + getQueryVariable("lname");
+            var typeform = "https://sample.typeform.com/to/VAOUJn?"
+            var fname = "fname=" + getQueryVariable("name (awf_first)");
+            var lname = "&fname=" + getQueryVariable("name (awf_last)");
             var email = "&email=" + getQueryVariable("email");
             var result = typeform + fname + lname + email;
             $('a').attr('href', result);
