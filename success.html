@@ -32,7 +32,7 @@ function getQueryVariable(variable)
             var fname = getQueryVariable("fname")
             var lname = getQueryVariable("lname")
             var email = getQueryVariable("email")
-            var result = typeform
+            var result = typeform + "fname=" + fname;
             // + "fname=" + fname + "&lname=" + "&email=" email;
             $('a').attr('href', result);
   </script>
