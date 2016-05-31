@@ -54,8 +54,8 @@ function getQueryVariable(variable)
 }
 
             var typeform = "https://sample.typeform.com/to/VAOUJn?"
-            var fname = "fname=" + getQueryVariable("name (awf_first)");
-            var lname = "&fname=" + getQueryVariable("name (awf_last)");
+            var fname = "fname=" + getQueryVariable("name%20(awf_first)");
+            var lname = "&fname=" + getQueryVariable("name%20(awf_last)");
             var email = "&email=" + getQueryVariable("email");
             var result = typeform + fname + lname + email;
             $('a').attr('href', result);
