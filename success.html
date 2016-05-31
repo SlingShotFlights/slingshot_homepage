@@ -54,7 +54,9 @@ function getQueryVariable(variable)
 }
 
             var typeform = "https://slingshotflights.typeform.com/to/VAOUJn?"
-            var email = getQueryVariable("email")
+            var fname = "fname=" + getQueryVariable("fname")
+            var lname = "&fname=" + getQueryVariable("lname")
+            var email = "&email=" + getQueryVariable("email")
             var result = typeform + email;
             $('a').attr('href', result);
   </script>
