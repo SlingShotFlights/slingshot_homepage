@@ -98,7 +98,7 @@ select {
 	align-items: center;
 	justify-content: center;
 	padding: 3em 0;
-	background: url("../img/unsplash_light.png") bottom center no-repeat;
+	background: url("../img/unsplash_big.png") bottom center no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -222,7 +222,6 @@ h3 {
 .main-footer {
 	background: #f7f8f9;
 	padding: 2em 0;
-	margin-top: 20px;
 	width: 100%;
 }
 
