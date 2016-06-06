@@ -92,6 +92,28 @@ select {
 	padding: .5em 0;
 	flex-direction: column;
 }
+.banner02 {
+	height: calc(100vh - 80px);
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 3em 0;
+	background-color: rgb(0, 163, 149);
+}
+
+ul#list01 li:before {
+  color:rgb(0, 163, 149);; /* set color to red */
+  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+  font-size:1.5em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+  padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+  position:relative;
+    top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+}
+
 .banner {
 	height: calc(100vh - 80px);
 	display: flex;
@@ -350,3 +372,47 @@ h3 {
 		width: 40%;
 	}
 }
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.col h3{color:rgb(0, 163, 149)!important;}
