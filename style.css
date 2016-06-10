@@ -1,0 +1,433 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+}
+h1 {
+}
+hr {
+	width: 200px;
+	margin: 40px auto;
+}
+a {
+	text-decoration: none;
+	color: #3acec2;
+}
+
+.green {
+	color: #3acec2;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-size: 1.2em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: none;
+  border-bottom: solid 3px #e8eeef;
+  font-size: 16px;
+  height: auto;
+  margin: 0 auto;
+  outline: 0;
+  padding: 10px;
+  width: 80%;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.logo {
+	width: 150px;
+	padding: 10px 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	padding: 10px 12px;
+	display: none;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-nav, .main-header {
+	display: flex;
+	align-items: center;
+}
+
+.main-header {
+	padding: .5em 0;
+	flex-direction: column;
+}
+.banner02 {
+		display: flex;
+	flex: 1;
+	flex-direction: column;
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 3em 0;
+	background-color: rgb(0, 163, 149);
+}
+
+ul#list01 li:before {
+  color:rgb(0, 163, 149);; /* set color to red */
+  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+  font-size:1.5em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+  padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+  position:relative;
+    top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+}
+
+.banner {
+	height: calc(100vh - 80px);
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 3em 0;
+	background: url("../img/unsplash_big.png") bottom center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em 0;
+}
+.container h3 {
+	margin-top: 0;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.col {
+	flex-direction: row;
+	flex: 1 250px;
+	padding: 1.5em;
+}
+.col h2 {
+	text-align: center;
+}
+.col img {
+	display:block;
+	margin: 0 auto;
+}
+.banner-two {
+	height: 50vh;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3em;
+	background: url("../img/aurora.png") center center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+h3 {
+	padding: 0 1em;
+	text-align: center;
+}
+.profiling {
+	margin-left: 25%;
+	list-style-type: circle;
+}
+.example {
+	padding: 1em 0;
+}
+.banner-two h2 {
+	font-style: italic;
+	color: #fff;
+}
+.banner-three {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 2em 3em;
+	background: url("../img/map.png") center center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.banner-four {
+	height: 50vh;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3em;
+	background: url("../img/island.jpg") center center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.banner-four h2 {
+	font-style: italic;
+	color: #fff;
+}
+.banner-five {
+	height: 60vh;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 3em;
+	background: url("../img/sunset.jpeg") center center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.banner-five h2 {
+	font-style: italic;
+	font-size: 1.1em;
+	color: #fff;
+}
+.security {
+	flex-direction: row;
+	padding-top: 0;
+}
+.security p {
+	font-size: .8em;
+}
+.main-footer {
+	background: #f7f8f9;
+	padding: 2em 0;
+	width: 100%;
+}
+
+.main-footer p {
+	font-size: .8em;
+	text-align: center;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer-nav li {
+	padding: 1em;
+	font-size: .8em;
+}
+
+/* ---- Page Elements ---- */
+
+.headline {
+	font-size: 2em;
+	max-width: 90%;
+	margin-bottom: 10px;
+}
+.tagline {
+	max-width: 80%;
+}
+.img-success {
+	max-width: 100%;
+}
+.cta-box {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	padding: 1em 2em 3em 2em;
+}
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #353f84;
+	border-radius: .35em;
+	margin-top: 20px;
+	cursor: pointer;
+	border: none;
+}
+.icons {
+	height: 56px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 718px) {
+	input[type="text"],
+	input[type="email"],
+	textarea,
+	select {
+	  font-size: 20px;
+	}
+
+	.main-nav, .main-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.main-header {
+		width: 90%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	.headline {
+		font-size: 3em;
+		max-width: 100%;
+	}
+	.tagline {
+		font-size: 1.3em;
+	}
+	.name a,
+	.main-nav a {
+	display: unset;
+	}
+	.success {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+	}
+	.example {
+		padding: 0 1em;
+	}
+	.cta-box {
+		width: 65%;
+	}
+	.security {
+		flex-wrap: wrap;
+		max-width: 70%;
+	}
+}
+@media (min-width: 1025px) {
+	.headline {
+		font-size: 3em;
+	}
+	.img-success {
+	max-width: 80%;
+	}
+	.example {
+		width: 45%;
+	}
+	.success {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.cta-box {
+		width: 40%;
+	}
+}
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.col h3{color:rgb(0, 163, 149)!important;}
+
+.banner-career {
+	height: 60vh;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 0;
+	background: url("../img/8.jpg") center center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
