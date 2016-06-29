@@ -95,7 +95,6 @@ select {
 .banner02 {
 	height: calc(80vh - 80px);
 	display: flex;
-	flex: 1;
 	flex-direction: column;
 	color: #fff;
 	text-align: center;
@@ -157,7 +156,6 @@ ul#list01 li:before {
 .banner {
 	height: calc(100vh - 80px);
 	display: flex;
-	flex: 1;
 	flex-direction: column;
 	color: #fff;
 	text-align: center;
